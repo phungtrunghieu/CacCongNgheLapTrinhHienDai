@@ -1,6 +1,7 @@
 from ckeditor.fields import RichTextField
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from cloudinary.models import CloudinaryField
 
 class User(AbstractUser):
     pass
@@ -20,8 +21,7 @@ class BaseModel(models.Model):
 class Course(BaseModel):
     subject = models.CharField(max_length=100)
     description = models.TextField(null=True)
-    image = models.ImageField(upload_to='course/%Y/%m',
-                              null=True)
+    image = CloudinaryField()#models.ImageField(upload_to='course/%Y/%m',null=True)
     category=models.ForeignKey(Category,on_delete=models.CASCADE)
 
     def __str__(self):

@@ -35,6 +35,14 @@ ALLOWED_HOSTS = []
 CKEDITOR_UPLOAD_PATH = "images/lessons/"
 
 # Application definition
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+cloudinary.config(
+  	cloud_name = "dhxwyu4ck",
+  	api_key = "551399276222188",
+  	api_secret = "THLr2EfpCPJKEIfYiMXqnuyOTto"
+)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -45,8 +53,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'course.apps.CourseConfig',
     'ckeditor',
-    'ckeditor_uploader'
-
+    'ckeditor_uploader',
+    'rest_framework',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
