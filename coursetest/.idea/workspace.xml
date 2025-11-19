@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a25170e-ae43-400f-8a31-a937cae87315" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/course/paginators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/templates/admin/stats.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/coursetest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/coursetest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/course/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coursetest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/coursetest/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coursetest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/coursetest/urls.py" afterDir="false" />
@@ -49,7 +45,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/123/CacCongNgheLapTrinhHienDai",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/123/CacCongNgheLapTrinhHienDai/coursetest",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>

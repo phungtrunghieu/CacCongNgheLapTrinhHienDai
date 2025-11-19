@@ -10,8 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
-
-
 from pathlib import Path
 
 from django.conf.global_settings import AUTH_USER_MODEL
@@ -38,10 +36,11 @@ CKEDITOR_UPLOAD_PATH = "images/lessons/"
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
+
 cloudinary.config(
-  	cloud_name = "dhxwyu4ck",
-  	api_key = "551399276222188",
-  	api_secret = "THLr2EfpCPJKEIfYiMXqnuyOTto"
+    cloud_name="dhxwyu4ck",
+    api_key="551399276222188",
+    api_secret="THLr2EfpCPJKEIfYiMXqnuyOTto"
 )
 
 INSTALLED_APPS = [
@@ -55,9 +54,15 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'rest_framework',
-    'drf_yasg'
+    'drf_yasg',
+    'oauth2_provider'
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+    )
+}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -101,9 +106,10 @@ DATABASES = {
 }
 
 import pymysql
+
 pymysql.install_as_MySQLdb()
 
-AUTH_USER_MODEL='course.User'
+AUTH_USER_MODEL = 'course.User'
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
@@ -142,3 +148,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CLIENT_ID='lYB2T2RhoRFAL8IVXqVTJN16yM5ecP0pMshJcYR7'
+CLIENT_SECRET='PhPv0O7IePtuk5TZS5NtU5wBHsg5QXqzjl6KTMtqkd3LvgWBLxcRpuJ7EqLjBf8yfeJuO0TWhfBK9PKHWcp05sJKu2w3EfyGTe15oI7eb9wcIh2VQ7taStwiz15NumuV'
